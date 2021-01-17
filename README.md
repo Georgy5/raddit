@@ -1,5 +1,4 @@
-# raddit
+# karddit
+A simple reddit-like clone
 
-A simple reddit clone
-
-Following Tutorial from https://mackenziechild.me/12-in-12/1/
+https://karddit.herokuapp.com/
