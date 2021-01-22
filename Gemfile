@@ -16,10 +16,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form', '~> 4.1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
-<<<<<<< HEAD
-=======
 # Use sqlite3 as the database for Active Record
->>>>>>> b4b0353fb27779bf599d6792a5567e6f7a71b051
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
