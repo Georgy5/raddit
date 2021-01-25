@@ -8,8 +8,8 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '6e92bf0d3e59ec5c0909bcb6855fd5a74d6b14ff6f21d86b209427126a095ea25343bf9a7ecba2643e935de7593cde351cef0886485030f2a0ed85ecfb3d1051'
-
+  # config.secret_key = 'd5059c630b7419e39da8a21108ae39bea2b1da9af5fe1d9ca646f5f2e79080994ce5c60a26aea70e0dc09ad83a63ec604dbc0f2a8ee55bdf6429958ba5a0fd65'
+  
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -114,7 +114,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'a1fcf3f6216ff9c555d2840c2a2907e98d802c7bc6543b9355e9ee6427f92d285f410783ec46e3eebf1fdac2425d79e429705deb89415dae1380f93918daa6e1'
+  # config.pepper = 'cd120ae0d3dca448885ffe8615e8990b6ee6ede6adf7da1364a20e0fffc2a7801a475d8dc67e829838027b0be9499a5d7e6bc742c8afcf39b2878c749da48868'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -126,11 +126,8 @@ Devise.setup do |config|
   # A period that the user is allowed to access the website even without
   # confirming their account. For instance, if set to 2.days, the user will be
   # able to access the website for two days without confirming their account,
-  # access will be blocked just in the third day.
-  # You can also set it to nil, which will allow the user to access the website
-  # without confirming their account.
-  # Default is 0.days, meaning the user cannot access the website without
-  # confirming their account.
+  # access will be blocked just in the third day. Default is 0.days, meaning
+  # the user cannot access the website without confirming their account.
   # config.allow_unconfirmed_access_for = 2.days
 
   # A period that the user is allowed to confirm their account before their
@@ -283,17 +280,4 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-
-  # ==> Turbolinks configuration
-  # If your app is using Turbolinks, Turbolinks::Controller needs to be included to make redirection work correctly:
-  #
-  # ActiveSupport.on_load(:devise_failure_app) do
-  #   include Turbolinks::Controller
-  # end
-
-  # ==> Configuration for :registerable
-
-  # When set to false, does not sign a user in automatically after their password is
-  # changed. Defaults to true, so a user is signed in automatically after changing a password.
-  # config.sign_in_after_change_password = true
 end
