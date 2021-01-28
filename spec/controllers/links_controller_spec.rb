@@ -1,7 +1,7 @@
 require "rails_helper"
 require_relative "../support/devise"
 
-RSpec.describe StoriesController, type: :controller do
+RSpec.describe LinksController, type: :controller do
   describe "GET /" do
     login_user
 
