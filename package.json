@@ -1,4 +1,6 @@
 {
+  "name": "karddit",
+  "private": true,
   "dependencies": {
     "@rails/webpacker": "4.3.0",
     "jquery": "^3.5.1",
