@@ -65,6 +65,7 @@ class LinksController < ApplicationController
   def upvote
     @link.upvote_by current_user
     redirect_back(fallback_location: root_path)
+    end
   end
 
   def downvote
@@ -78,7 +79,7 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
+  # strong params - only allow the white list through.
   def link_params
     params.require(:link).permit(:title, :url)
   end
