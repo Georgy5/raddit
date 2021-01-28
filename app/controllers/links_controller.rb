@@ -64,7 +64,11 @@ class LinksController < ApplicationController
 
   def upvote
     @link.upvote_by current_user
-    redirect_back(fallback_location: root_path)
+    respond_to do |format|
+      format.html { 
+        redirect_back(fallback_location: root_path)
+      }
+    end
   end
 
   def downvote
