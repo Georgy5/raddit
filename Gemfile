@@ -12,7 +12,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 2.0.3', group: :doc
 gem 'devise', '~> 4.7.3'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'acts_as_votable', '~> 0.13.1'
