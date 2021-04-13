@@ -11,17 +11,24 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep	
 !/tmp/.keep
 
-/node_modules
-/yarn-error.log
-
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+
 /public/assets
 /public/packs
 /public/packs-test
