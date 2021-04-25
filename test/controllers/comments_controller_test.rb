@@ -15,20 +15,20 @@ class CommentsControllerTest < ActionController::TestCase
     assert_not_nil assigns(:comments)
   end
 
-#  test "should get new" do
+  test "should get new" do
 #    sign_in @user
-#    get :new
-#    assert_response :success
-#  end
+    get :new
+    assert_response :success
+  end
 
-#  test "should create comment" do
-#    assert_difference('Comment.count') do
-#      post :create, params: { comment: { body: @comment.body, link_id: @comment.link_id, user_id: @comment.user_id } }
-#      # post :create, params: { link: { comment: { body: @comment.body, link_id: @comment.link, user_id: @comment.user } } }
-#    end
-#
-#    assert_redirected_to comment_path(assigns(:comment))
-#  end
+  test "should create comment" do
+    assert_difference('Comment.count') do
+      post :create, params: { comment: { body: @comment.body, link_id: @comment.link_id, user_id: @comment.user_id } }
+      # post :create, params: { link: { comment: { body: @comment.body, link_id: @comment.link, user_id: @comment.user } } }
+    end
+
+    assert_redirected_to comment_path(assigns(:comment))
+  end
 
   test "should show comment" do
     get :show, params: { id: @comment }
@@ -40,19 +40,19 @@ class CommentsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-#  test "should update comment" do
-#    # sign_in @user
-#    patch :update, params: { id: @comment, comment: { body: @comment.body, link_id: @comment.link_id, user_id: @comment.user_id } }
-#    # assert_redirected_to comment_path(assigns(:comment))
-#    assert_redirected_to link_path(assigns(@comment.link))
-#  end
-
-#  test "should destroy comment" do
+  test "should update comment" do
 #    sign_in @user
-#    assert_difference('Comment.count', -1) do
-#      delete :destroy, params: { id: @comment }
-#    end
-#
-#    assert_redirected_to comments_path
-#  end
+    patch :update, params: { id: @comment, comment: { body: @comment.body, link_id: @comment.link_id, user_id: @comment.user_id } }
+    # assert_redirected_to comment_path(assigns(:comment))
+    assert_redirected_to link_path(assigns(@comment.link))
+  end
+
+  test "should destroy comment" do
+#    sign_in @user
+    assert_difference('Comment.count', -1) do
+      delete :destroy, params: { id: @comment }
+    end
+
+    assert_redirected_to comments_path
+  end
 end
