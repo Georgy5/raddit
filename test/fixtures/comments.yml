@@ -6,6 +6,6 @@ one:
   user_id: 
 
 two:
-  link_id: 1
+  link_id: 2
   body: MyText
   user_id: 

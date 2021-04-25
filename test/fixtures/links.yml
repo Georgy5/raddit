@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  url: MyString
+  title: "One"
+  url: "theone.com"
+  user: :seb
 
 two:
-  title: MyString
-  url: MyString
+  title: "SecondURLlink"
+  url: "www.two.org"
+  user: :david
