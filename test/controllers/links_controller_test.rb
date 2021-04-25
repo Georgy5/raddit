@@ -50,7 +50,6 @@ class LinksControllerTest < ActionController::TestCase
   test "should destroy link" do
     sign_in @user
     assert_difference('Link.count', -1) do
-      puts @link.id
       delete :destroy, params: { id: @link.id }
     end
 
